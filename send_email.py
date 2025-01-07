@@ -14,7 +14,7 @@ BREVO_SMTP_PASSWORD = os.environ.get("BREVO_SMTP_PASSWORD")
 
 def send_email():
     recipient = "nctuners@gmail.com"
-    subject = "Push-Ups Time!
+    subject = "Push-Ups Time!"
     body = "Wake up! It's time to do your push-ups!"
 
     msg = MIMEMultipart()
@@ -40,7 +40,7 @@ def home():
 def start_scheduler():
     scheduler = BackgroundScheduler()
     # Schedule the job to run every weekday at 5:00 AM
-    scheduler.add_job(send_email, "cron", day_of_week="mon-fri", hour=15, minute=38)
+    scheduler.add_job(send_email, "cron", day_of_week="mon-fri", hour=15, minute=42)
     scheduler.start()
     print("Scheduler started!")
 
