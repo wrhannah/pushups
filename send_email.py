@@ -14,8 +14,8 @@ BREVO_SMTP_PASSWORD = os.environ.get("BREVO_SMTP_PASSWORD")
 
 def send_email():
     recipient = "nctuners@gmail.com"
-    subject = "Push-Ups Time!!!!!!!"
-    body = "It's time to do your push-ups!"
+    subject = "Push-Ups Time!
+    body = "Wake up! It's time to do your push-ups!"
 
     msg = MIMEMultipart()
     msg["From"] = BREVO_SMTP_USER
