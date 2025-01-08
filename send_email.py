@@ -40,7 +40,7 @@ def home():
 def start_scheduler():
     scheduler = BackgroundScheduler()
     # Schedule the job to run every weekday at 5:00 AM
-    scheduler.add_job(send_email, "cron", day_of_week="mon-fri", hour=1, minute=25)
+    scheduler.add_job(send_email, "cron", day_of_week="mon-fri", hour=1, minute=46)
     scheduler.start()
     print("Scheduler started!")
 
